@@ -20,7 +20,7 @@ import static java.lang.String.format;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class NotificationsConsumer {
+public class NotificationConsumer {
 
     private final NotificationRepository repository;
     private final EmailService emailService;
