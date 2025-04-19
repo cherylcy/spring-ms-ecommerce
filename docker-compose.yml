@@ -30,7 +30,7 @@ services:
   mongo-express:
     container_name: ms_mongo_express
     image: mongo-express
-    restart: always
+    restart: unless-stopped
     ports:
       - 8081:8081
     networks:
@@ -80,6 +80,14 @@ services:
     ports:
       - 1080:1080
       - 1025:1025
+
+  zipkin:
+    container_name: zipkin
+    image: openzipkin/zipkin
+    ports:
+      - 9411:9411
+    networks:
+      - microservices-net
 
 networks:
   microservices-net:
