@@ -72,3 +72,11 @@ This is a microservices-based e-commerce backend application built using the Spr
 │   ├── product/
 └── docker-compose.yml
 ```
+
+## Future Enhancements
+
+- Add unit and integration testing for all services
+- Circuit Breakers and retries with Resilience4j
+- Rate limiting for APIs and backpressure handling
+- Centralized logging with ELK stack
+- Kubernetes deployment using Helm charts
